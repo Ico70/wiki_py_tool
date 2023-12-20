@@ -5,7 +5,7 @@ import yagmail #simpler alternative to smtplib
 from bs4 import BeautifulSoup, NavigableString #for cleaning the requests input if it is used
 from weasyprint import HTML, CSS #better to import both, than later try to debug why the page rules aren't interpreted
 import requests #it is almost always better to render directly from url, this is for debugging
-from tidylib import Tidy, tidy_document #helps with common errors that are made when a lot of users eddit wikipedia
+from tidylib import Tidy, tidy_document #helps with common errors that are made when a lot of users edit wikipedia
 import subprocess # nb. the easiest way with no dependencies is to install Prince to render pdf
 from pdf_output import weasyprint, prince #pdf modules
 import pycountry #the user does not need to type en or english to change the language, this module converts to a ISO code en
